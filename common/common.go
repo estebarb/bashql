@@ -46,3 +46,12 @@ func Seleccionar(seleccionados []int, entradas []string) []string {
 	}
 	return salida
 }
+
+func GetValue(col string, datos, columns []string) string{
+	for k, v := range(columns){
+		if v == col {
+			return datos[k]
+		}
+	}
+	panic(fmt.Errorf("%v column not found", col))
+}
