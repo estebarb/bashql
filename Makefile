@@ -13,6 +13,9 @@ format:
 	go fmt bqlmax/*.go
 	go fmt bqlmin/*.go
 	go fmt bqldistinct/*.go
+	go fmt bqlgroupby/*.go
+	go fmt bqlsort/*.go
+	go fmt bqlheader/*.go
 	
 install:
 	go install github.com/estebarb/bashql/...
