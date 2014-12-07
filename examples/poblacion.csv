@@ -1,0 +1,562 @@
+Nombre,Total,Hombre,Mujer,Tipo
+Costa Rica,4301712,2106188,2195524,País
+San José,1403963,671434,732529,Provincia
+Alajuela,847660,420636,427024,Provincia
+Cartago,491425,241121,250304,Provincia
+Heredia,433975,211417,222558,Provincia
+Puntarenas,410914,205975,204939,Provincia
+Limón,386954,193673,193281,Provincia
+Guanacaste,326821,161932,164889,Provincia
+San José,287619,136244,151375,Otro
+Alajuela,254567,125620,128947,Otro
+Desamparados,207082,99336,107746,Otro
+San Carlos,163751,82049,81702,Otro
+Cartago,147882,72493,75389,Otro
+Pérez Zeledón,135429,65860,69569,Otro
+Pococí,125847,63215,62632,Otro
+Heredia,123067,58402,64665,Otro
+Puntarenas,115009,57243,57766,Otro
+Goicoechea,114736,54097,60639,Otro
+La Unión,100013,48212,51801,Otro
+Limón,94420,45751,48669,Otro
+San Ramón,80573,39556,41017,Otro
+Alajuelita,77801,37431,40370,Otro
+Grecia,76713,38030,38683,Otro
+Pavas,71368,33887,37481,Otro
+Turrialba,69546,34390,35156,Otro
+Curridabat,65034,30512,34522,Otro
+Tibás,64834,30274,34560,Otro
+Liberia,62987,30844,32143,Otro
+Vásquez de Coronado,61084,29415,31669,Otro
+Limón,61077,28710,32367,Otro
+Aserrí,58430,28598,29832,Otro
+Paraíso,57437,28103,29334,Otro
+Sarapiquí,57343,29169,28174,Otro
+Siquirres,56853,28781,28072,Otro
+Moravia,56766,26692,30074,Otro
+Escazú,56733,26741,29992,Otro
+Santa Cruz,55110,27286,27824,Otro
+Liberia,53381,26100,27281,Otro
+Nicoya,50826,25006,25820,Otro
+Hatillo,50382,23691,26691,Otro
+Montes de Oca,49008,22846,26162,Otro
+Santa Ana,48879,23371,25508,Otro
+San Francisco,48403,23093,25310,Otro
+San Rafael,46067,22481,23586,Otro
+San Isidro de El General,46017,21688,24329,Otro
+Oreamuno,45474,22240,23234,Otro
+Buenos Aires,45244,22809,22435,Otro
+Upala,43951,22018,21933,Otro
+Alajuela,42970,20439,22531,Otro
+Naranjo,42713,20902,21811,Otro
+Quesada,42214,20343,21871,Otro
+Corredores,41830,20721,21109,Otro
+El Guarco,41781,21052,20729,Otro
+San José,41650,20017,21633,Otro
+Guácimo,41386,20676,20710,Otro
+Barva,40681,19891,20790,Otro
+San Sebastián,40224,19148,21076,Otro
+Santo Domingo,40040,19482,20558,Otro
+Golfito,39136,19783,19353,Otro
+Coto Brus,38456,19132,19324,Otro
+Matina,37735,19591,18144,Otro
+Carrillo,36995,18522,18473,Otro
+Guápiles,36457,17536,18921,Otro
+Santa Bárbara,36329,17910,18419,Otro
+Palmares,34716,17106,17610,Otro
+Cariari,34172,17094,17078,Otro
+Desamparados,33843,16019,17824,Otro
+Daniel Flores,33591,16183,17408,Otro
+Puriscal,33147,16641,16506,Otro
+Aguacaliente o San Francisco,31789,15597,16192,Otro
+Uruca,31696,15278,16418,Otro
+San Felipe,31648,15170,16478,Otro
+Siquirres,31634,15868,15766,Otro
+San Miguel,31573,15359,16214,Otro
+San Vicente,31256,14358,16898,Otro
+Talamanca,30713,15659,15054,Otro
+Barranca,30644,14701,15943,Otro
+Osa,29433,15038,14395,Otro
+Poás,29216,14518,14698,Otro
+Curridabat,28813,13330,15483,Otro
+Esparza,28643,14075,14568,Otro
+Ulloa,28528,13636,14892,Otro
+Aserrí,28191,13626,14565,Otro
+San Pablo,28045,13519,14526,Otro
+San Rafael,27249,13130,14119,Otro
+Aguirre,26892,13852,13040,Otro
+Turrialba,26829,12973,13856,Otro
+Purral,26696,12547,14149,Otro
+Ipís,26454,12542,13912,Otro
+Mercedes,26298,12494,13804,Otro
+Mora,26234,12676,13558,Otro
+Cañas,26194,12906,13288,Otro
+Desamparados,26108,12794,13314,Otro
+San Rafael,26061,14076,11985,Otro
+San Nicolás,25927,12705,13222,Otro
+Atenas,25460,12737,12723,Otro
+El Tejar,24972,12458,12514,Otro
+San Antonio,24971,12184,12787,Otro
+Nicoya,24752,11988,12764,Otro
+Los Guido,24432,11879,12553,Otro
+Las Horquetas,24331,12260,12071,Otro
+Rita,24043,12284,11759,Otro
+San Pedro,23853,11031,12822,Otro
+Los Chiles,23726,12119,11607,Otro
+San Rafael Abajo,23283,11066,12217,Otro
+San Antonio,22549,10989,11560,Otro
+San Rafael,22200,10227,11973,Otro
+Belén,21808,10568,11240,Otro
+San Juan,21744,10011,11733,Otro
+Santa Cruz,21709,10483,11226,Otro
+San Diego,21621,10460,11161,Otro
+Patalillo,21340,10210,11130,Otro
+Buenos Aires,21063,10330,10733,Otro
+Guadalupe,21013,9755,11258,Otro
+Cañas,20811,10087,10724,Otro
+Paraíso,20601,10138,10463,Otro
+San Isidro,20560,10179,10381,Otro
+Orotina,20342,9985,10357,Otro
+Aguas Zarcas,20241,10068,10173,Otro
+San Francisco de Dos Ríos,20209,9439,10770,Otro
+Acosta,20209,10218,9991,Otro
+Guácima,20183,10017,10166,Otro
+Puerto Viejo,20174,10334,9840,Otro
+Flores,20035,9816,10219,Otro
+Quepos,19889,10186,9703,Otro
+San Pablo,19786,9571,10215,Otro
+Tilarán,19640,9736,9904,Otro
+Bagaces,19536,9857,9679,Otro
+San Juan de Dios,19284,9213,10071,Otro
+Hospital,19273,9375,9898,Otro
+La Trinidad,19177,9178,9999,Otro
+La Cruz,19177,9437,9740,Otro
+Heredia,19138,8799,10339,Otro
+Concepción,18917,9021,9896,Otro
+Zapote,18679,8685,9994,Otro
+Guácimo,18325,9032,9293,Otro
+Calle Blancos,18186,8536,9650,Otro
+Valverde Vega,18086,8880,9206,Otro
+Abangares,18039,9015,9024,Otro
+Valle La Estrella,17908,9188,8720,Otro
+Chacarita,17434,8668,8766,Otro
+Carmen,17425,8527,8898,Otro
+Mata de Plátano,17370,8355,9015,Otro
+San Isidro,17358,8626,8732,Otro
+Pital,17325,8874,8451,Otro
+Garabito,17311,8700,8611,Otro
+Corredor,17249,8512,8737,Otro
+Llanos de Santa Lucía,17086,8105,8981,Otro
+Roxana,16802,9018,7784,Otro
+Tirrases,16614,8024,8590,Otro
+Colón,16548,7966,8582,Otro
+Batán,16543,8449,8094,Otro
+Concepción,16515,8068,8447,Otro
+San Isidro,16346,7829,8517,Otro
+Tarrazú,16280,8091,8189,Otro
+Upala,16138,7910,8228,Otro
+Naranjo,16039,7651,8388,Otro
+Parrita,16010,8183,7827,Otro
+Parrita,16010,8183,7827,Otro
+El Roble,15759,7937,7822,Otro
+Espíritu Santo,15685,7614,8071,Otro
+Guatuso,15508,7886,7622,Otro
+Pocosol,15395,7789,7606,Otro
+La Fortuna,15384,7802,7582,Otro
+Grecia,15198,7244,7954,Otro
+Gravilias,15024,7144,7880,Otro
+Florencia,14991,7480,7511,Otro
+Granadilla,14913,7065,7848,Otro
+Pozos,14891,7097,7794,Otro
+San Vito,14839,7255,7584,Otro
+Sardinal,14785,7498,7287,Otro
+San Rafael Arriba,14682,6781,7901,Otro
+Jiménez,14669,7296,7373,Otro
+Guadalupe o Arenilla,14624,7113,7511,Otro
+Alvarado,14623,7335,7288,Otro
+Salitrillos,14258,7032,7226,Otro
+San Rafael,14247,6860,7387,Otro
+San Juan,14191,6654,7537,Otro
+Colima,13810,6490,7320,Otro
+León XIII,13366,6297,7069,Otro
+Los Chiles,13253,6719,6534,Otro
+Damas,13175,6309,6866,Otro
+Montes de Oro,12950,6439,6511,Otro
+Catedral,12938,6107,6831,Otro
+Guaycará,12918,6528,6390,Otro
+Bagaces,12367,6275,6092,Otro
+Merced,12265,5921,6344,Otro
+Oriental,12227,5897,6330,Otro
+Zarcero,12202,6103,6099,Otro
+León Cortés,12200,6141,6059,Otro
+Río Azul,12184,6043,6141,Otro
+Carrandi,12050,6409,5641,Otro
+Alajuelita,11991,5781,6210,Otro
+Escazú,11984,5525,6459,Otro
+Patarrá,11864,5851,6013,Otro
+San Juan,11861,5717,6144,Otro
+Santa Ana,11775,5563,6212,Otro
+Jacó,11725,5847,5878,Otro
+San Josecito,11579,5628,5951,Otro
+Canoas,11527,5616,5911,Otro
+Santiago,11512,5640,5872,Otro
+Golfito,11268,5514,5754,Otro
+San Roque,11136,5533,5603,Otro
+Nandayure,11120,5669,5451,Otro
+Tambor,10992,5406,5586,Otro
+Sabalito,10982,5462,5520,Otro
+Río Cuarto,10886,5616,5270,Otro
+Sabanilla,10775,5027,5748,Otro
+La Virgen,10706,5384,5322,Otro
+Río Segundo,10661,5214,5447,Otro
+Corralillo,10608,5370,5238,Otro
+Dulce Nombre,10548,5102,5446,Otro
+San Josecito,10506,5129,5377,Otro
+Jiménez,10499,5191,5308,Otro
+Cutris,10334,5392,4942,Otro
+Ángeles,10232,5026,5206,Otro
+Puente de Piedra,10216,5088,5128,Otro
+San Antonio,10193,5043,5150,Otro
+San Marcos,9993,4903,5090,Otro
+Anselmo Llorente,9989,4579,5410,Otro
+San Pedro,9932,4861,5071,Otro
+Occidental,9901,4738,5163,Otro
+San Isidro,9828,5044,4784,Otro
+Palmar,9816,4967,4849,Otro
+San Rafael,9692,4648,5044,Otro
+San Rafael,9668,4735,4933,Otro
+Venecia,9638,4841,4797,Otro
+Cot,9630,4750,4880,Otro
+Dulce Nombre de Jesús,9627,4671,4956,Otro
+Jesús,9603,4793,4810,Otro
+Orotina,9581,4622,4959,Otro
+Lepanto,9502,4767,4735,Otro
+San Rafael,9321,4554,4767,Otro
+Tres Ríos,9300,4379,4921,Otro
+Peñas Blancas,9289,4687,4602,Otro
+Carrillos,9230,4608,4622,Otro
+La Cruz,9191,4366,4825,Otro
+San Antonio,9184,4351,4833,Otro
+Laurel,9148,4628,4520,Otro
+Matina,9142,4733,4409,Otro
+Orosi,9092,4525,4567,Otro
+San Pedro,9076,4478,4598,Otro
+San Ignacio,9016,4455,4561,Otro
+Las Juntas,9016,4479,4537,Otro
+Sabanilla,9009,4480,4529,Otro
+Sixaola,8862,4556,4306,Otro
+Belén,8841,4411,4430,Otro
+Puerto Jiménez,8791,4548,4243,Otro
+Llorente,8771,4303,4468,Otro
+Pacuarito,8756,4612,4144,Otro
+Río Jiménez,8745,4397,4348,Otro
+Tilarán,8677,4122,4555,Otro
+Cajón,8574,4254,4320,Otro
+San Ramón,8551,3928,4623,Otro
+Santiago,8511,4113,4398,Otro
+Ángeles,8500,4331,4169,Otro
+Puntarenas,8335,4027,4308,Otro
+San Pablo,8319,4058,4261,Otro
+Río Blanco,8307,4313,3994,Otro
+Miramar,8298,4039,4259,Otro
+Cahuita,8293,4185,4108,Otro
+Piedades Norte,8291,4033,4258,Otro
+Rincón Sabanilla,8259,3948,4311,Otro
+Zaragoza,8219,4120,4099,Otro
+Piedades,8128,3859,4269,Otro
+San José,8100,3998,4102,Otro
+Pejibaye,8001,4045,3956,Otro
+Puerto Cortés,7969,3998,3971,Otro
+Tacares,7963,4008,3955,Otro
+Filadelfia,7953,3988,3965,Otro
+San Rafael,7941,3970,3971,Otro
+Dulce Nombre,7901,3839,4062,Otro
+Mata Redonda,7883,3532,4351,Otro
+San Juan,7796,3788,4008,Otro
+Turrúcares,7630,3868,3762,Otro
+La Suiza,7590,3784,3806,Otro
+San Pedro,7554,3700,3854,Otro
+Buenos Aires,7493,3616,3877,Otro
+Cóbano,7491,3868,3623,Otro
+San José,7450,3658,3792,Otro
+Santa Lucía,7413,3568,3845,Otro
+Atenas,7398,3610,3788,Otro
+San José o Pizote,7352,3731,3621,Otro
+Bratsi,7318,3705,3613,Otro
+Garita,7276,3660,3616,Otro
+Santa Rosa,7269,3590,3679,Otro
+Bolívar,7265,3606,3659,Otro
+Platanares,7208,3670,3538,Otro
+Uruca,7197,3494,3703,Otro
+Hojancha,7197,3654,3543,Otro
+San Joaquín,7173,3476,3697,Otro
+Sarchí Norte,7140,3460,3680,Otro
+Matama,7128,3540,3588,Otro
+San Rafael,7039,3464,3575,Otro
+Alfaro,6994,3465,3529,Otro
+Dota,6946,3398,3548,Otro
+Veintisiete de Abril,6883,3474,3409,Otro
+Carrizal,6856,3421,3435,Otro
+Cascajal,6732,3241,3491,Otro
+Paquera,6685,3448,3237,Otro
+Rivas,6593,3308,3285,Otro
+Esquipulas,6588,3211,3377,Otro
+Tobosi,6569,3345,3224,Otro
+Juan Viñas,6552,3279,3273,Otro
+Cervantes,6541,3282,3259,Otro
+San Antonio,6521,3216,3305,Otro
+San Vicente,6516,3071,3445,Otro
+Vuelta de Jorco,6499,3191,3308,Otro
+Pocora,6432,3207,3225,Otro
+El General,6394,3147,3247,Otro
+Tamarindo,6376,3260,3116,Otro
+La Tigra,6374,3213,3161,Otro
+San Miguel,6367,3178,3189,Otro
+San Jerónimo,6333,3156,3177,Otro
+La Palmera,6321,3388,2933,Otro
+Aguabuena,6286,3136,3150,Otro
+Santo Tomás,6267,3092,3175,Otro
+Santa Cecilia,6258,3161,3097,Otro
+Telire,6240,3213,3027,Otro
+Duacarí,6177,3179,2998,Otro
+San Juan Grande,6171,3089,3082,Otro
+Pavón,6159,3193,2966,Otro
+San Mateo,6136,3127,3009,Otro
+La Isabel,6116,3035,3081,Otro
+El Cairo,6082,3058,3024,Otro
+Concepción,6077,2979,3098,Otro
+San Gabriel,6061,3017,3044,Otro
+San Isidro,6032,3000,3032,Otro
+La Ribera,6024,2945,3079,Otro
+El Amparo,5992,3057,2935,Otro
+Mansión,5974,2963,3011,Otro
+Potrero Grande,5956,2993,2963,Otro
+San Isidro,5949,2937,3012,Otro
+Santa Bárbara,5944,2877,3067,Otro
+Cinco Esquinas,5925,2897,3028,Otro
+Coyolar,5913,2926,2987,Otro
+Mercedes Sur,5866,2971,2895,Otro
+Alegría,5656,2791,2865,Otro
+Tempate,5635,2807,2828,Otro
+Pacayas,5628,2809,2819,Otro
+La Asunción,5591,2580,3011,Otro
+Tárcoles,5586,2853,2733,Otro
+San Pedro,5582,2797,2785,Otro
+Chomes,5522,2865,2657,Otro
+Barva,5521,2627,2894,Otro
+Turrubares,5512,2852,2660,Otro
+San Rafael,5451,2731,2720,Otro
+Cachí,5434,2708,2726,Otro
+Palmira,5416,2625,2791,Otro
+San José de la Montaña,5398,2731,2667,Otro
+Quebradilla,5388,2700,2688,Otro
+Sarchí Sur,5266,2574,2692,Otro
+Santiago,5224,2627,2597,Otro
+Katira,5127,2653,2474,Otro
+Tierra Blanca,5103,2557,2546,Otro
+Santa Rosa,5083,2471,2612,Otro
+Aguas Claras,4939,2511,2428,Otro
+Nosara,4920,2506,2414,Otro
+Tucurrique,4872,2404,2468,Otro
+Macacona,4742,2317,2425,Otro
+San Antonio,4739,2330,2409,Otro
+Santo Domingo,4730,2186,2544,Otro
+Tabarcia,4702,2298,2404,Otro
+Sánchez,4694,2093,2601,Otro
+Mercedes,4688,2140,2548,Otro
+San Miguel,4657,2302,2355,Otro
+Bijagua,4642,2355,2287,Otro
+San Juan,4638,2302,2336,Otro
+Santa María,4621,2240,2381,Otro
+Colorado,4621,2294,2327,Otro
+Palmichal,4581,2267,2314,Otro
+Santa Teresita,4574,2287,2287,Otro
+Purabá,4573,2264,2309,Otro
+Cirrí Sur,4552,2241,2311,Otro
+Santiago,4535,2295,2240,Otro
+Páramo,4511,2291,2220,Otro
+San Isidro,4478,2156,2322,Otro
+San Francisco,4439,2225,2214,Otro
+San Lorenzo,4394,2222,2172,Otro
+Delicias,4357,2154,2203,Otro
+Llano Grande,4342,2187,2155,Otro
+Salitral,4302,2084,2218,Otro
+Hojancha,4273,2138,2135,Otro
+Palmitos,4271,2127,2144,Otro
+Pavones,4271,2159,2112,Otro
+San Pablo,4209,2041,2168,Otro
+Sierpe,4205,2248,1957,Otro
+Chirripó,4185,2079,2106,Otro
+Monte Verde,4155,2022,2133,Otro
+Piedras Blancas,4137,2080,2057,Otro
+La Granja,4119,2084,2035,Otro
+San Roque,4098,2046,2052,Otro
+Barrantes,4091,2037,2054,Otro
+San Ramón,4054,1909,2145,Otro
+Zarcero,4004,1920,2084,Otro
+San Antonio,3984,1992,1992,Otro
+Guayabo,3930,1861,2069,Otro
+La Cuesta,3906,1965,1941,Otro
+Diriá,3905,1857,2048,Otro
+Colorado,3874,2092,1782,Otro
+San Cristóbal,3871,1904,1967,Otro
+Cartagena,3824,1919,1905,Otro
+Volcán,3815,1979,1836,Otro
+Frailes,3806,1942,1864,Otro
+El Rosario,3757,1864,1893,Otro
+Piedades Sur,3738,1916,1822,Otro
+Cipreses,3700,1892,1808,Otro
+Barbacoas,3692,1849,1843,Otro
+Naranjito,3677,1892,1785,Otro
+Jesús,3631,1805,1826,Otro
+Concepción,3621,1837,1784,Otro
+Palmares,3599,1718,1881,Otro
+Limoncito,3591,1804,1787,Otro
+Tures,3521,1723,1798,Otro
+Sámara,3510,1805,1705,Otro
+Monterrey,3455,1787,1668,Otro
+San Isidro,3403,1752,1651,Otro
+Mogote,3398,1728,1670,Otro
+Cabo Velas,3362,1677,1685,Otro
+Pará,3333,1610,1723,Otro
+Yolillal,3329,1692,1637,Otro
+Savegre,3326,1774,1552,Otro
+Bahía Ballena,3306,1745,1561,Otro
+San Pedro,3286,1643,1643,Otro
+San Jerónimo,3264,1586,1678,Otro
+Pejibaye,3245,1613,1632,Otro
+Cañas Dulces,3230,1630,1600,Otro
+Brunka,3220,1624,1596,Otro
+Santa Cruz,3208,1678,1530,Otro
+Dos Ríos,3194,1665,1529,Otro
+San José,3162,1609,1553,Otro
+Mercedes,3127,1571,1556,Otro
+Chires,3079,1636,1443,Otro
+Boruca,3074,1610,1464,Otro
+Río Nuevo,3067,1577,1490,Otro
+Rosario,3061,1518,1543,Otro
+Bejuco,3026,1578,1448,Otro
+San Juan,3011,1522,1489,Otro
+Sarapiquí,2842,1418,1424,Otro
+Tuis,2837,1417,1420,Otro
+Santo Domingo,2831,1391,1440,Otro
+Manzanillo,2811,1471,1340,Otro
+Pittier,2758,1475,1283,Otro
+La Fortuna,2756,1366,1390,Otro
+Santiago,2737,1341,1396,Otro
+San Isidro,2731,1390,1341,Otro
+Carmen,2702,1181,1521,Otro
+Quebrada Grande,2700,1379,1321,Otro
+San Mateo,2692,1364,1328,Otro
+San Jorge,2673,1406,1267,Otro
+Concepción,2639,1296,1343,Otro
+Chánguena,2631,1396,1235,Otro
+Belén de Nosarita,2629,1296,1333,Otro
+Santa Rosa,2614,1334,1280,Otro
+Brasil,2586,1274,1312,Otro
+Rancho Redondo,2537,1240,1297,Otro
+Curubandé,2527,1231,1296,Otro
+Quebrada Honda,2520,1232,1288,Otro
+Carmona,2486,1227,1259,Otro
+San Francisco,2480,1122,1358,Otro
+Germania,2471,1296,1175,Otro
+Biolley,2455,1274,1181,Otro
+Capellades,2454,1244,1210,Otro
+Guaitil,2406,1244,1162,Otro
+Barú,2397,1219,1178,Otro
+Jesús María,2397,1240,1157,Otro
+Tayutic,2374,1219,1155,Otro
+Sierra,2351,1202,1149,Otro
+Concepción,2348,1151,1197,Otro
+Sabana Redonda,2343,1177,1166,Otro
+Sabanillas,2331,1266,1065,Otro
+Arenal,2300,1156,1144,Otro
+Potrero Cerrado,2281,1134,1147,Otro
+Volio,2276,1112,1164,Otro
+Florida,2254,1156,1098,Otro
+Nacascolo,2247,1105,1142,Otro
+San Pablo,2215,1129,1086,Otro
+Pitahaya,2211,1140,1071,Otro
+Rodríguez,2121,1053,1068,Otro
+Llano Bonito,2111,1093,1018,Otro
+Santa Eulalia,2082,1066,1016,Otro
+Bebedero,2082,1111,971,Otro
+San Juan,2051,1040,1011,Otro
+Santa Elena,2040,1043,997,Otro
+Paracito,2037,1032,1005,Otro
+San José,2022,1019,1003,Otro
+Brisas,2001,1008,993,Otro
+Candelaria,1961,1016,945,Otro
+Santa Rosa,1945,1007,938,Otro
+La Ceiba,1922,1017,905,Otro
+San Carlos,1893,966,927,Otro
+Cangrejal,1875,986,889,Otro
+Tres Equis,1868,954,914,Otro
+El Mastate,1856,895,961,Otro
+Carara,1810,948,862,Otro
+Caño Negro,1808,937,871,Otro
+Copey,1801,886,915,Otro
+Tronadora,1795,928,867,Otro
+Cuajiniquil,1789,960,829,Otro
+Venado,1754,905,849,Otro
+San Rafael,1730,873,857,Otro
+Mercedes,1707,861,846,Otro
+La Garita,1688,867,821,Otro
+Laguna,1671,815,856,Otro
+Santa Cruz,1665,862,803,Otro
+Pilas,1659,869,790,Otro
+San Miguel,1644,854,790,Otro
+Bolsón,1627,849,778,Otro
+Mayorga,1602,778,824,Otro
+San Andrés,1578,789,789,Otro
+Chira,1576,817,759,Otro
+Puente Carrillo,1574,811,763,Otro
+Buenavista,1573,808,765,Otro
+San Isidro,1531,793,738,Otro
+Legua,1521,762,759,Otro
+Santa Rita,1437,705,732,Otro
+Candelarita,1436,750,686,Otro
+Tarbaca,1402,728,674,Otro
+Colinas,1371,734,637,Otro
+Tierras Morenas,1358,694,664,Otro
+San Pablo,1357,679,678,Otro
+Palmira,1334,705,629,Otro
+Tapesco,1305,693,612,Otro
+Acapulco,1296,649,647,Otro
+San Rafael,1294,660,634,Otro
+La Unión,1249,648,601,Otro
+Zapotal,1215,635,580,Otro
+Grifo Alto,1182,593,589,Otro
+San Juan de Mata,1182,624,558,Otro
+Llanuras del Gaspar,1181,656,525,Otro
+Guadalupe,1148,575,573,Otro
+San Antonio,1106,563,543,Otro
+Hacienda Vieja,1070,525,545,Otro
+Desmonte,1047,523,524,Otro
+Río Naranjo,1015,488,527,Otro
+Palmira,988,503,485,Otro
+Cureña,951,535,416,Otro
+Guacimal,923,488,435,Otro
+Cote,867,455,412,Otro
+Líbano,865,450,415,Otro
+Escobal,848,439,409,Otro
+San Jerónimo,751,395,356,Otro
+Porvenir,741,395,346,Otro
+Zapote,739,387,352,Otro
+Huacas,707,368,339,Otro
+Varablanca,700,380,320,Otro
+Picagres,675,350,325,Otro
+Porozal,669,351,318,Otro
+Desamparaditos,666,337,329,Otro
+Arancibia,665,375,290,Otro
+San Pedro,646,336,310,Otro
+Monte Romo,643,337,306,Otro
+Peralta,611,334,277,Otro
+Jardín,524,272,252,Otro
+San Luis,517,265,252,Otro
+Monterrey,498,242,256,Otro
+Patio de Agua,412,205,207,Otro
+Zapotal,391,211,180,Otro
+Piedras Negras,379,201,178,Otro
+Buenavista,325,167,158,Otro
+Toro Amarillo,273,150,123,Otro

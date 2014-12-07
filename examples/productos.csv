@@ -1,0 +1,10 @@
+nombre,categoria,precio,peso
+arroz,granos,1200,1
+frijoles,granos,1500,1
+garbanzos,granos,800,1
+lentejas,granos,800,0.7
+limones,verduleria,2500,1
+tomate,verduleria,3000,1
+hongos,verduleria,5000,0.850
+jabón,quimicos,500,0.2
+cloro,quimicos,1750,2

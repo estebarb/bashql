@@ -38,7 +38,7 @@ func main() {
 
 	col, er := r.Read()
 	for er == nil {
-		relevante := true
+		relevante := false
 
 		// Determina si la fila es relevante
 		for i := 0; i < len(argumentos); i += 3 {
@@ -66,7 +66,7 @@ func main() {
 			case "<":
 				if errA != nil || errB != nil {
 					// Comparación de strings
-					panic(fmt.Errorf("'<' not available for strings."))
+					relevante = relevante || (valorA < valorB)
 				} else {
 					// Comparación de números
 					relevante = relevante || (numA < numB)
@@ -74,7 +74,7 @@ func main() {
 			case ">":
 				if errA != nil || errB != nil {
 					// Comparación de strings
-					panic(fmt.Errorf("'>' not available for strings."))
+					relevante = relevante || (valorA > valorB)
 				} else {
 					// Comparación de números
 					relevante = relevante || (numA > numB)
@@ -82,7 +82,7 @@ func main() {
 			case "<=":
 				if errA != nil || errB != nil {
 					// Comparación de strings
-					panic(fmt.Errorf("'<=' not available for strings."))
+					relevante = relevante || (valorA <= valorB)
 				} else {
 					// Comparación de números
 					relevante = relevante || (numA <= numB)
@@ -90,7 +90,7 @@ func main() {
 			case ">=":
 				if errA != nil || errB != nil {
 					// Comparación de strings
-					panic(fmt.Errorf("'>=' not available for strings."))
+					relevante = relevante || (valorA >= valorB)
 				} else {
 					// Comparación de números
 					relevante = relevante || (numA >= numB)
