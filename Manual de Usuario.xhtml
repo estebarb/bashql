@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/TR/2001/REC-MathML2-20010221/dtd/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="GENERATOR" content="LyX 2.0.6" />
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<title>BashQLManual de Usuario</title>
+
+<!-- Text Class Preamble -->
+<style type="text/css">
+div.toc {
+margin: 2em 0em;
+border-style: solid;
+border-width: 2px 0px;
+padding: 1em 0em;
+}
+div.tochead { font-size: x-large; font-weight: bold; }
+div.lyxtoc-0 {
+margin: 2em 0em 0em 0em;
+font-size: xx-large;
+font-weight: bold;
+}
+div.lyxtoc-1 {
+margin: 1em 0em 0em 0em;
+font-size: x-large;
+font-weight: bold;
+}
+div.lyxtoc-2 {
+margin: 0em 0em 0em 1em;
+font-size: large;
+font-weight: normal;
+}
+div.lyxtoc-3 { margin: 0em 0em 0em 0.5em; font-size: medium; }
+div.lyxtoc-4 { margin: 0em 0em 0em 0.5em; }
+div.lyxtoc-5 { margin: 0em 0em 0em 0.5em; }
+div.lyxtoc-6 { margin: 0em 0em 0em 0.5em; }
+a.tocentry {
+text-decoration: none;
+color: black;
+}
+a.tocentry:visited { color: black; }
+a.tocarrow {
+font-weight: bold;
+text-decoration: none;
+color: #909090;
+}
+a.tocarrow:visited { color: #C0C0C0; }
+</style>
+
+<!-- Preamble Snippets -->
+
+<!-- Layout-provided Styles -->
+<style type='text/css'>
+h1.title {
+font-size: x-large;
+margin-bottom: 1ex;
+text-align: center;
+
+}
+div.author {
+font-size: large;
+margin-top: 1.3ex;
+margin-bottom: 0.7ex;
+text-align: center;
+
+}
+div.date {
+font-size: large;
+margin-top: 0.9ex;
+margin-bottom: 0.5ex;
+text-align: center;
+
+}
+div.abstract {
+font-size: small;
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+margin-left: 3ex;
+margin-right: 3ex;
+text-align: left;
+
+}
+div.abstract_label {
+font-weight: bold;
+font-size: large;
+text-align: center;
+
+}
+
+div.abstract {
+margin: 4ex;
+}
+div.abstract_item {
+font-size: small;
+padding-top: 1ex;
+}
+div.abstract_label {
+font-weight: bold;
+}
+div.standard {
+margin-bottom: 2ex;
+}
+h2.section {
+font-weight: bold;
+font-size: x-large;
+margin-top: 1.3ex;
+margin-bottom: 0.7ex;
+text-align: left;
+
+}
+h3.subsection {
+font-weight: bold;
+font-size: large;
+margin-top: 0.9ex;
+margin-bottom: 0.5ex;
+text-align: left;
+
+}
+h4.subsubsection {
+font-weight: bold;
+font-size: medium;
+margin-top: 0.7ex;
+margin-bottom: 0.4ex;
+text-align: left;
+
+}
+ol.enumerate {
+margin-top: 0.7ex;
+margin-bottom: 0.7ex;
+margin-left: 3ex;
+text-align: left;
+
+}
+div.plain_layout {
+text-align: left;
+
+}
+dl.description dt { font-weight: bold; }
+div.listings {
+font-family: monospace;
+}
+</style>
+</head>
+<body>
+<h1 class="title"><a id='magicparlabel-11' />
+BashQL
+<br />
+
+Manual de Usuario</h1>
+<div class="author"><a id='magicparlabel-22333' />
+Esteban Rodríguez Betancourt - B15512
+<br />
+
+Marie Barquero Rojas - B00799</div>
+<div class="date"><a id='magicparlabel-220' />
+Lunes 8 de diciembre del 2014</div>
+
+<div class="abstract"><div class="abstract_label">Resumen</div>
+<div class="abstract_item"><a id='magicparlabel-19' />
+BashQL es un conjunto de herramientas que permiten hacer consultas sobre archivos CSV. Cada herramienta está diseñada para que tenga una sola función específica, y al usarlas en conjunto se pueden lograr consultas más complejas.</div>
+<div class="abstract_item"><a id='magicparlabel-54' />
+Las herramientas están programadas en Google Go, y pueden ser utilizadas en cualquier sistema tipo UNIX, como Linux, BSD o OS X.</div>
+</div>
+<div class="standard"><a id='magicparlabel-12716' />
+</div>
+<h2 class="section"><span class="section_label">1</span> <a id='magicparlabel-84' />
+Instalación</h2>
+<div class="standard"><a id='magicparlabel-97' />
+La forma más sencilla de instalar BashQL es utilizando el gestor de paquetes de Google Go. Esto además permite recompilar las herramientas para que incorporen futuras mejoras en el compilador de Go. También es posible copiar los ejecutables precompilados para la plataforma correcta: BashQL no tiene dependencias dinámicas aparte de las bibliotecas específicas del sistema.</div>
+<h3 class="subsection"><span class="subsection_label">1.1</span> <a id='magicparlabel-177' />
+Instalación de Google Go</h3>
+<div class="standard"><a id='magicparlabel-188' />
+Las siguientes instrucciones son para Go 1.3.3. Es posible que las instrucciones cambien para futuras versiones. Se recomienda revisar el sitio web <a href="http://golang.org/">http://golang.org/</a> para tener la información más actualizada.</div>
+<h4 class="subsubsection"><span class="subsubsection_label">1.1.1</span> <a id='magicparlabel-228' />
+<a id="sub_Instalaci__n_precompilada" />
+Instalación precompilada</h4>
+
+<ol class="enumerate"><li class="enumerate_item"><a id='magicparlabel-238' />
+Descargar la versión correspondiente a su sistema operativo y arquitectura desde <a href="https://golang.org/dl/">https://golang.org/dl/</a>.</li>
+<li class="enumerate_item"><a id='magicparlabel-262' />
+Descomprimir el archivo (puede ser en $HOME).</li>
+<li class="enumerate_item"><a id='magicparlabel-281' />
+Crear una carpeta aparte para los paquetes de Go (ejm: $HOME/gopacks).</li>
+<li class="enumerate_item"><a id='magicparlabel-307' />
+Modificar las variables de entorno para agregar las herramientas de Go:
+
+<ol class="enumerate"><li class="enumerate_item"><a id='magicparlabel-333' />
+Agregar en ~/.profile o ~/.bashrc las siguientes líneas, al final. Modificar según sea el caso.</li>
+<li class="enumerate_item"><a id='magicparlabel-420' />
+Cargar las variables de entorno en la sesión actual:</li>
+</ol>
+</li><li class="enumerate_item"><a id='magicparlabel-514' />
+En este punto al correr el comando &ldquo;go&rdquo; se deberían desplegar las instrucciones para correr el programa.</li>
+</ol>
+<h4 class="subsubsection"><span class="subsubsection_label">1.1.2</span> <a id='magicparlabel-537' />
+Instalación desde código fuente</h4>
+
+<ol class="enumerate"><li class="enumerate_item"><a id='magicparlabel-548' />
+Asegurarse de tener instalado un compilador de C (se recomienda gcc) y mercurial.</li>
+<li class="enumerate_item"><a id='magicparlabel-557' />
+Clonar el respostorio: </li>
+<li class="enumerate_item"><a id='magicparlabel-599' />
+Construir la distribución de Go: </li>
+<li class="enumerate_item"><a id='magicparlabel-653' />
+Seguir las instrucciones para actualizar las variables de entorno, tal como se indica en los pasos del 3 al 5 de <a href="#sub_Instalaci__n_precompilada">Sección 1.1.1</a>.</li>
+</ol>
+<h3 class="subsection"><span class="subsection_label">1.2</span> <a id='magicparlabel-708' />
+Instalación de BashQL</h3>
+<div class="standard"><a id='magicparlabel-714' />
+Para descargar BashQL es necesario tener GIT y Go instalados. Luego solamente hay que correr los comandos:</div>
+
+<div class="standard"><a id='magicparlabel-847' />
+</div>
+<div class='float float-listings'><pre>$ go get github.com/estebarb/bashql/...
+$ go install github.com/estebarb/bashql/...</pre></div>
+
+
+<div class="standard"><a id='magicparlabel-904' />
+Con esto se instalan las herramientas que forman parte de BashQL.</div>
+<h2 class="section"><span class="section_label">2</span> <a id='magicparlabel-926' />
+Uso de BashQL</h2>
+<div class="standard"><a id='magicparlabel-936' />
+BashQL está formado por varios comandos, que cumplen con funciones muy específicas. Prácticamente todos los comandos utilizan la entrada y la salida estándar, como método de comunicación entre las herramientas, por lo que es muy sencillo crear nuevos componentes interoperables con BashQL.</div>
+<h3 class="subsection"><span class="subsection_label">2.1</span> <a id='magicparlabel-1067' />
+bqlfrom</h3>
+
+<dl class='description'><dt class="description_label">Nombre</dt>
+<dd class="description_item"><a id='magicparlabel-1142' />
+ bqlfrom - Lee un archivo CSV, lo normaliza y lo escribe en stdout.</dd>
+<dt class="description_label">Sinopsis</dt>
+<dd class="description_item"><a id='magicparlabel-1159' />
+ bqlfrom [opciones] archivo</dd>
+<dt class="description_label">Descripción</dt>
+<dd class="description_item"><a id='magicparlabel-1164' />
+ Lee un archivo CSV según el formato especificado en las opciones (o bien el formato estandar), lo transforma al formato estandar y lo escribe en stdout.
+
+<dl class='description'><dt class="description_label">-d</dt>
+<dd class="description_item"><a id='magicparlabel-1181' />
+ Indica el caracter que delimita las columnas del archivo CSV. Ejm: &ldquo;-d ';'&rdquo; o &ldquo;-d=';'&rdquo;. Por defecto se utiliza una coma (&ldquo;,&rdquo;) como separador.</dd>
+<dt class="description_label">-c</dt>
+<dd class="description_item"><a id='magicparlabel-1226' />
+ Indica el caracter de inicio de un comentario. Las líneas comentadas son ignoradas por el lector de CSV. Ejm: &ldquo;-c '%'&rdquo; o &ldquo;-c='%'&rdquo;. Por defecto los CSV no tienen comentarios.</dd>
+</dl>
+</dd><dt class="description_label">Ejemplo:</dt>
+<dd class="description_item"><a id='magicparlabel-2115' />
+</dd>
+</dl>
+<div class="standard"><a id='magicparlabel-11351' />
+</div>
+<div class='float float-listings'><pre>$ cat personal.csv
+% Personal de la tienda
+id;nombre;edad;puesto
+1;Antonio;25;Cajas
+2;María;26;Cajas
+$ bqlfrom -d ';' -c='%' personal.csv
+id,nombre,edad,puesto
+1,Antonio,25,Cajas
+2,María,26,Cajas</pre></div>
+
+<h3 class="subsection"><span class="subsection_label">2.2</span> <a id='magicparlabel-24290' />
+bqlselect</h3>
+
+<dl class='description'><dt class="description_label">Nombre</dt>
+<dd class="description_item"><a id='magicparlabel-24291' />
+ bqlselect - Selecciona columnas específicas de un archivo CSV.</dd>
+<dt class="description_label">Sinopsis</dt>
+<dd class="description_item"><a id='magicparlabel-24292' />
+ bqlselect columnas...</dd>
+<dt class="description_label">Descripción</dt>
+<dd class="description_item"><a id='magicparlabel-24293' />
+ Recibe por stdin un archivo CSV normalizado y devuelve por stdout los datos de las columnas seleccionadas.</dd>
+<dt class="description_label">Ejemplo:</dt>
+<dd class="description_item"><a id='magicparlabel-24294' />
+</dd>
+</dl>
+<div class="standard"><a id='magicparlabel-24300' />
+</div>
+<div class='float float-listings'><pre>$ bqlfrom -d ';' -c='%' personal.csv \
+| bqlselect nombre puesto
+nombre,puesto
+Antonio,Cajas
+María,Cajas</pre></div>
+
+<h3 class="subsection"><span class="subsection_label">2.3</span> <a id='magicparlabel-2247' />
+bqlwhere</h3>
+
+<dl class='description'><dt class="description_label">Nombre</dt>
+<dd class="description_item"><a id='magicparlabel-2248' />
+ bqlwhere - Selecciona las filas que cumplen con los criterios dados.</dd>
+<dt class="description_label">Sinopsis</dt>
+<dd class="description_item"><a id='magicparlabel-2249' />
+ bqlwhere {columna operador argumento}...</dd>
+<dt class="description_label">Descripción</dt>
+<dd class="description_item"><a id='magicparlabel-2250' />
+ Recibe por stdin un archivo CSV normalizado y devuelve por stdout las filas que cumplen con TODOS los criterios solicitados. Los argumentos van en trios, donde se indica la columna, el operador y el argumento del operador (valor o columna).
+
+<dl class='description'><dt class="description_label">Operadores:</dt>
+<dd class="description_item"><a id='magicparlabel-2368' />
+ El comando acepta los siguientes operadores:
+
+<dl class='description'><dt class="description_label">=</dt>
+<dd class="description_item"><a id='magicparlabel-2378' />
+ Igualdad entre el valor de la columna y el valor pasado como argumento (número o cadena).</dd>
+<dt class="description_label">&lt;</dt>
+<dd class="description_item"><a id='magicparlabel-2425' />
+ El valor de la columna es menor que el valor pasado como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">&gt;</dt>
+<dd class="description_item"><a id='magicparlabel-2431' />
+ El valor de la columna es mayor que el valor pasado como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">!=</dt>
+<dd class="description_item"><a id='magicparlabel-2437' />
+ Desigualdad entre el valor de la columna y el valor pasado como argumento (número o cadena).</dd>
+<dt class="description_label">&lt;=</dt>
+<dd class="description_item"><a id='magicparlabel-2554' />
+ El valor de la columna es menor o igual que el valor pasado como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">&gt;=</dt>
+<dd class="description_item"><a id='magicparlabel-2555' />
+ El valor de la columna es mayor o igual que el valor pasado como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">c=</dt>
+<dd class="description_item"><a id='magicparlabel-2680' />
+ Igualdad entre el valor de la columna y el valor en la columna pasada como argumento (número o cadena).</dd>
+<dt class="description_label">c&lt;</dt>
+<dd class="description_item"><a id='magicparlabel-2681' />
+ El valor de la columna es menor que el valor en la columna pasada como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">c&gt;</dt>
+<dd class="description_item"><a id='magicparlabel-2682' />
+ El valor de la columna es mayor que el valor en la columna pasada como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">c!=</dt>
+<dd class="description_item"><a id='magicparlabel-2683' />
+ Desigualdad entre el valor de la columna y el valor en la columna pasada como argumento (número o cadena).</dd>
+<dt class="description_label">c&lt;=</dt>
+<dd class="description_item"><a id='magicparlabel-2684' />
+ El valor de la columna es menor o igual que el valor en la columna pasada como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">c&gt;=</dt>
+<dd class="description_item"><a id='magicparlabel-2780' />
+ El valor de la columna es mayor o igual que el valor en la columna pasada como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">like</dt>
+<dd class="description_item"><a id='magicparlabel-2800' />
+ El texto en la columna hace match contra una expresión regular pasada como argumento.</dd>
+<dt class="description_label">unlike</dt>
+<dd class="description_item"><a id='magicparlabel-2823' />
+ El texto en la columna NO hace match contra una expresión regular pasada como argumento.</dd>
+</dl>
+</dd></dl>
+</dd><dt class="description_label">Ejemplo:</dt>
+<dd class="description_item"><a id='magicparlabel-2255' />
+</dd>
+</dl>
+<div class="standard"><a id='magicparlabel-11657' />
+</div>
+<div class='float float-listings'><pre>$ bqlfrom poblacion.csv \
+| bqlwhere Tipo = 'Provincia' \
+Total '&lt;' 500000 \
+Nombre '&lt;=' 'Limón'
+Nombre,Total,Hombre,Mujer,Tipo
+Cartago,491425,241121,250304,Provincia
+Heredia,433975,211417,222558,Provincia
+Limón,386954,193673,193281,Provincia
+Guanacaste,326821,161932,164889,Provincia
+
+</pre></div>
+
+<h3 class="subsection"><span class="subsection_label">2.4</span> <a id='magicparlabel-3397' />
+bqlwhenever</h3>
+
+<dl class='description'><dt class="description_label">Nombre</dt>
+<dd class="description_item"><a id='magicparlabel-3398' />
+ bqlwhenever - Selecciona las filas que cumplen con alguno de los criterios dado.</dd>
+<dt class="description_label">Sinopsis</dt>
+<dd class="description_item"><a id='magicparlabel-3399' />
+ bqlwhenever {columna operador argumento}...</dd>
+<dt class="description_label">Descripción</dt>
+<dd class="description_item"><a id='magicparlabel-3400' />
+ Recibe por stdin un archivo CSV normalizado y devuelve por stdout las filas que cumplen con AL MENOS UNO de los criterios solicitados. Los argumentos van en trios, donde se indica la columna, el operador y el argumento del operador (valor o columna).
+
+<dl class='description'><dt class="description_label">Operadores:</dt>
+<dd class="description_item"><a id='magicparlabel-3401' />
+ El comando acepta los siguientes operadores:
+
+<dl class='description'><dt class="description_label">=</dt>
+<dd class="description_item"><a id='magicparlabel-3402' />
+ Igualdad entre el valor de la columna y el valor pasado como argumento (número o cadena).</dd>
+<dt class="description_label">&lt;</dt>
+<dd class="description_item"><a id='magicparlabel-3403' />
+ El valor de la columna es menor que el valor pasado como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">&gt;</dt>
+<dd class="description_item"><a id='magicparlabel-3404' />
+ El valor de la columna es mayor que el valor pasado como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">!=</dt>
+<dd class="description_item"><a id='magicparlabel-3405' />
+ Desigualdad entre el valor de la columna y el valor pasado como argumento (número o cadena).</dd>
+<dt class="description_label">&lt;=</dt>
+<dd class="description_item"><a id='magicparlabel-3406' />
+ El valor de la columna es menor o igual que el valor pasado como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">&gt;=</dt>
+<dd class="description_item"><a id='magicparlabel-3407' />
+ El valor de la columna es mayor o igual que el valor pasado como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">c=</dt>
+<dd class="description_item"><a id='magicparlabel-3408' />
+ Igualdad entre el valor de la columna y el valor en la columna pasada como argumento (número o cadena).</dd>
+<dt class="description_label">c&lt;</dt>
+<dd class="description_item"><a id='magicparlabel-3409' />
+ El valor de la columna es menor que el valor en la columna pasada como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">c&gt;</dt>
+<dd class="description_item"><a id='magicparlabel-3410' />
+ El valor de la columna es mayor que el valor en la columna pasada como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">c!=</dt>
+<dd class="description_item"><a id='magicparlabel-3411' />
+ Desigualdad entre el valor de la columna y el valor en la columna pasada como argumento (número o cadena).</dd>
+<dt class="description_label">c&lt;=</dt>
+<dd class="description_item"><a id='magicparlabel-3412' />
+ El valor de la columna es menor o igual que el valor en la columna pasada como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">c&gt;=</dt>
+<dd class="description_item"><a id='magicparlabel-3413' />
+ El valor de la columna es mayor o igual que el valor en la columna pasada como argumento (número o cadena). El texto se compara por orden alfabético.</dd>
+<dt class="description_label">like</dt>
+<dd class="description_item"><a id='magicparlabel-3414' />
+ El texto en la columna hace match contra una expresión regular pasada como argumento.</dd>
+<dt class="description_label">unlike</dt>
+<dd class="description_item"><a id='magicparlabel-3415' />
+ El texto en la columna NO hace match contra una expresión regular pasada como argumento.</dd>
+</dl>
+</dd></dl>
+</dd><dt class="description_label">Ejemplo:</dt>
+<dd class="description_item"><a id='magicparlabel-3424' />
+</dd>
+</dl>
+<div class="standard"><a id='magicparlabel-11676' />
+</div>
+<div class='float float-listings'><pre>$ bqlfrom poblacion.csv \
+| bqlwhere Tipo = Provincia \
+| bqlwhenever Nombre '&lt;' 'Cartago' Nombre '&gt;' 'Cartago' \
+| bqlselect Nombre
+Nombre
+San José
+Alajuela
+Heredia
+Puntarenas
+Limón
+Guanacaste</pre></div>
+
+<h3 class="subsection"><span class="subsection_label">2.5</span> <a id='magicparlabel-3728' />
+bqljoin</h3>
+
+<dl class='description'><dt class="description_label">Nombre</dt>
+<dd class="description_item"><a id='magicparlabel-3729' />
+ bqljoin - Toma dos archivos CSV y hace un join entre ellos.</dd>
+<dt class="description_label">Sinopsis</dt>
+<dd class="description_item"><a id='magicparlabel-3905' />
+ bqljoin [opciones] csv1 columna1 csv2 columna2
+<br />
+
+bqljoin [opciones] columnaSTDIN csv2 columna2</dd>
+<dt class="description_label">Descripción</dt>
+<dd class="description_item"><a id='magicparlabel-3731' />
+ Lee dos archivos CSV y hace un join entre ellos según la columna especificada por archivo. Por defecto se hace un join interno, pero con los parámetros se puede modificar para que realice un left join, right join, inner join o outer join / full join. Escribe la salida en stdout.
+
+<dl class='description'><dt class="description_label">-d1</dt>
+<dd class="description_item"><a id='magicparlabel-3732' />
+ Indica el delimitador del primer archivo. Ejm: &ldquo;-d1=';'&rdquo;. Por defecto es una coma.</dd>
+<dt class="description_label">-d2</dt>
+<dd class="description_item"><a id='magicparlabel-3840' />
+ Indica el delimitador del segundo archivo. Ejm: &ldquo;-d2=';'&rdquo;. Por defecto es una coma.</dd>
+<dt class="description_label">-d</dt>
+<dd class="description_item"><a id='magicparlabel-3945' />
+ Indica el delimitador de la entrada estandar. Ejm: &ldquo;-d=';'&rdquo;. Por defecto es una coma.</dd>
+<dt class="description_label">-type</dt>
+<dd class="description_item"><a id='magicparlabel-3733' />
+ Indica el tipo de join que se realizará. El tipo puede ser &ldquo;inner&rdquo;, &ldquo;left&rdquo;, &ldquo;right&rdquo;, &ldquo;outer&rdquo; o &ldquo;full&rdquo;.</dd>
+</dl>
+</dd><dt class="description_label">Ejemplo:</dt>
+<dd class="description_item"><a id='magicparlabel-4131' />
+</dd>
+</dl>
+<div class="standard"><a id='magicparlabel-11759' />
+</div>
+<div class='float float-listings'><pre>$ cat english_numbers.csv 
+number,value
+zero,0
+one,1
+two,2
+three,3
+four,4
+five,5
+ten,10
+"one hundred",100
+"two thousand",2000
+million,1000000
+$ cat spanish_numbers.csv 
+numero,value
+cero,0
+cuatro,4
+cinco,5
+seis,6
+siete,7
+ocho,8
+nueve,9
+cien,100
+mil,1000
+millón,1000000
+$ bqljoin english_numbers.csv value spanish_numbers.csv value
+number,value,numero,value
+zero,0,cero,0
+one hundred,100,cien,100
+million,1000000,millón,1000000
+four,4,cuatro,4
+five,5,cinco,5
+$ bqljoin -type left english_numbers.csv value spanish_numbers.csv value
+number,value,numero,value
+zero,0,cero,0
+one,1,"",""
+ten,10,"",""
+one hundred,100,cien,100
+million,1000000,millón,1000000
+two,2,"",""
+two thousand,2000,"",""
+three,3,"",""
+four,4,cuatro,4
+five,5,cinco,5
+$ bqljoin -type right english_numbers.csv value spanish_numbers.csv value
+number,value,numero,value
+zero,0,cero,0
+one hundred,100,cien,100
+"","",mil,1000
+million,1000000,millón,1000000
+four,4,cuatro,4
+five,5,cinco,5
+"","",seis,6
+"","",siete,7
+"","",ocho,8
+"","",nueve,9
+$ bqljoin -type full english_numbers.csv value spanish_numbers.csv value
+number,value,numero,value
+zero,0,cero,0
+one,1,"",""
+ten,10,"",""
+one hundred,100,cien,100
+"","",mil,1000
+million,1000000,millón,1000000
+two,2,"",""
+two thousand,2000,"",""
+three,3,"",""
+four,4,cuatro,4
+five,5,cinco,5
+"","",seis,6
+"","",siete,7
+"","",ocho,8
+"","",nueve,9</pre></div>
+
+<h3 class="subsection"><span class="subsection_label">2.6</span> <a id='magicparlabel-7515' />
+bqlgroupby</h3>
+
+<dl class='description'><dt class="description_label">Nombre</dt>
+<dd class="description_item"><a id='magicparlabel-7516' />
+ bqlgroupby - Agrupa una tabla según las columnas especificadas, usando los acumuladores especificados para las demás columnas.</dd>
+<dt class="description_label">Sinopsis</dt>
+<dd class="description_item"><a id='magicparlabel-7517' />
+ bqlgroupby {-g columnaGrupo}... {-c columnaReducir -f funcionReduccion}</dd>
+<dt class="description_label">Descripción</dt>
+<dd class="description_item"><a id='magicparlabel-7518' />
+ Lee una tabla por stdin y la agrupa usando las columnas seleccionadas. En las columnas seleccionadas para reducción aplica una función de reducción sobre los valores de dichas columnas.
+
+<dl class='description'><dt class="description_label">-g</dt>
+<dd class="description_item"><a id='magicparlabel-7519' />
+ Indica según qué columna se hará el agrupamiento. Ejm: &ldquo;-g year -g month&rdquo;.</dd>
+<dt class="description_label">-c</dt>
+<dd class="description_item"><a id='magicparlabel-7520' />
+ Indica de qué columna se tomarán los datos para la función de reducción asociada.</dd>
+<dt class="description_label">-f</dt>
+<dd class="description_item"><a id='magicparlabel-7521' />
+ Indica qué comando se va a correr como función de reducción. Se puede utilizar cualquier comando que tome sus entradas por stdin (una por línea) y devuelva el resultado por stdout cuando reciba EOF. BashQL contiene las siguientes funciones de reducción:
+
+<dl class='description'><dt class="description_label">bqlsum</dt>
+<dd class="description_item"><a id='magicparlabel-7522' />
+ Suma los valores recibidos.</dd>
+<dt class="description_label">bqlcount</dt>
+<dd class="description_item"><a id='magicparlabel-8273' />
+ Cuenta los valores recibidos.</dd>
+<dt class="description_label">bqldistinct</dt>
+<dd class="description_item"><a id='magicparlabel-8278' />
+ Cuenta los valores únicos recibidos.</dd>
+<dt class="description_label">bqlavg</dt>
+<dd class="description_item"><a id='magicparlabel-8285' />
+ Calcula el promedio de los valores recibidos.</dd>
+<dt class="description_label">bqlmax</dt>
+<dd class="description_item"><a id='magicparlabel-8300' />
+ Retorna el mayor valor recibido.</dd>
+<dt class="description_label">bqlmin</dt>
+<dd class="description_item"><a id='magicparlabel-8305' />
+ Retorna el menor valor recibido.</dd>
+</dl>
+</dd></dl>
+</dd><dt class="description_label">Ejemplo:</dt>
+<dd class="description_item"><a id='magicparlabel-7595' />
+</dd>
+</dl>
+<div class="standard"><a id='magicparlabel-11859' />
+</div>
+<div class='float float-listings'><pre>$ head visitas.csv 
+year,month,day,visits
+2014,12,06,4253
+2014,12,05,26286
+2014,12,04,11716
+2014,12,03,10206
+2014,12,02,26719
+2014,12,01,20816
+2014,11,30,24176
+2014,11,29,17463
+2014,11,28,9194
+$ bqlfrom visitas.csv \
+| bqlgroupby -g month \
+-c visits -f bqlsum \
+-c visits -f bqlavg \
+-c visits -f bqlmin \
+-c visits -f bqlmax
+month,visits,visits,visits,visits
+01,6.50238e+06,16134.937965260546,62,32765
+02,5.976605e+06,16285.027247956403,37,32703
+03,6.772536e+06,16722.31111111111,8,32713
+04,6.802518e+06,16196.471428571429,132,32722
+05,7.27781e+06,16769.14746543779,22,32717
+06,6.784116e+06,16152.657142857142,78,32581
+07,7.227396e+06,16652.986175115206,116,32626
+08,7.131601e+06,16432.260368663596,53,32675
+09,6.857604e+06,16327.628571428571,30,32419
+10,6.989063e+06,16103.831797235023,67,32767
+11,6.852773e+06,16316.12619047619,80,32708
+12,6.672185e+06,16313.41075794621,21,32743</pre></div>
+
+<h3 class="subsection"><span class="subsection_label">2.7</span> <a id='magicparlabel-9916' />
+bqlheader</h3>
+
+<dl class='description'><dt class="description_label">Nombre</dt>
+<dd class="description_item"><a id='magicparlabel-9917' />
+ bqlheader - Cambia el nombre de las columnas.</dd>
+<dt class="description_label">Sinopsis</dt>
+<dd class="description_item"><a id='magicparlabel-9918' />
+ bqlheader [opciones] nombres...</dd>
+<dt class="description_label">Descripción</dt>
+<dd class="description_item"><a id='magicparlabel-9919' />
+ Cambia o agrega el nombre de las columnas del CSV pasado por stdin y lo devuelve por stdout.
+
+<dl class='description'><dt class="description_label">-i</dt>
+<dd class="description_item"><a id='magicparlabel-9920' />
+ Sinónimo de insert.</dd>
+<dt class="description_label">-insert</dt>
+<dd class="description_item"><a id='magicparlabel-9921' />
+ Inserta el encabezado, se usa si el archivo CSV no trae encabezado.</dd>
+</dl>
+</dd><dt class="description_label">Ejemplo:</dt>
+<dd class="description_item"><a id='magicparlabel-9954' />
+</dd>
+</dl>
+<div class="standard"><a id='magicparlabel-11901' />
+</div>
+<div class='float float-listings'><pre>$ bqlfrom visitas.csv \
+| bqlgroupby -g month \
+-c visits -f bqlsum \
+-c visits -f bqlavg \
+-c visits -f bqlmin \
+-c visits -f bqlmax \
+| bqlheader mes total promedio_diario minimo maximo
+mes,total,promedio_diario,minimo,maximo
+01,6.50238e+06,16134.937965260546,62,32765
+02,5.976605e+06,16285.027247956403,37,32703
+03,6.772536e+06,16722.31111111111,8,32713
+04,6.802518e+06,16196.471428571429,132,32722
+05,7.27781e+06,16769.14746543779,22,32717
+06,6.784116e+06,16152.657142857142,78,32581
+07,7.227396e+06,16652.986175115206,116,32626
+08,7.131601e+06,16432.260368663596,53,32675
+09,6.857604e+06,16327.628571428571,30,32419
+10,6.989063e+06,16103.831797235023,67,32767
+11,6.852773e+06,16316.12619047619,80,32708
+12,6.672185e+06,16313.41075794621,21,32743</pre></div>
+
+<h3 class="subsection"><span class="subsection_label">2.8</span> <a id='magicparlabel-10328' />
+bqlsort</h3>
+
+<dl class='description'><dt class="description_label">Nombre</dt>
+<dd class="description_item"><a id='magicparlabel-10329' />
+ bqlsort - Ordena las filas según las columnas pasadas como argumento.</dd>
+<dt class="description_label">Sinopsis</dt>
+<dd class="description_item"><a id='magicparlabel-10330' />
+ bqlsort [opciones] columnas...</dd>
+<dt class="description_label">Descripción</dt>
+<dd class="description_item"><a id='magicparlabel-10331' />
+ Recibe por stdin un archivo CSV normalizado y devuelve por stdout el archivo con las filas ordenadas de forma ascendente según las columnas pasadas como parámetro.
+
+<dl class='description'><dt class="description_label">Opciones:</dt>
+<dd class="description_item"><a id='magicparlabel-10332' />
+ El comando acepta las siguientes opciones:
+
+<dl class='description'><dt class="description_label">-r</dt>
+<dd class="description_item"><a id='magicparlabel-10333' />
+ Ordena de forma descendente</dd>
+<dt class="description_label">-reverse</dt>
+<dd class="description_item"><a id='magicparlabel-10527' />
+ Sinónimo de -r.</dd>
+</dl>
+</dd></dl>
+</dd><dt class="description_label">Ejemplo:</dt>
+<dd class="description_item"><a id='magicparlabel-10355' />
+</dd>
+</dl>
+<div class="standard"><a id='magicparlabel-11926' />
+</div>
+<div class='float float-listings'><pre>$ bqlfrom poblacion.csv \
+| bqlwhere Tipo = Provincia \
+| bqlwhenever Nombre '&lt;' 'Cartago' \
+              Nombre '&gt;' 'Cartago' \
+| bqlsort Nombre
+Nombre,Total,Hombre,Mujer,Tipo
+Alajuela,847660,420636,427024,Provincia
+Guanacaste,326821,161932,164889,Provincia
+Heredia,433975,211417,222558,Provincia
+Limón,386954,193673,193281,Provincia
+Puntarenas,410914,205975,204939,Provincia
+San José,1403963,671434,732529,Provincia</pre></div>
+
+</body>
+</html>
